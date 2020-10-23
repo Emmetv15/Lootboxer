@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emmetv15/lootboxer.git"
+    "url": "git+https://github.com/emmetv15/Lootboxer.git"
   },
   "keywords": [
     "lootbox",
@@ -21,7 +21,7 @@
   "author": "Emmet_v15",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/emmetv15/lootboxer/issues"
+    "url": "https://github.com/emmetv15/Lootboxer/issues"
   },
-  "homepage": "https://github.com/emmetv15/lootboxer#readme"
+  "homepage": "https://github.com/emmetv15/Lootboxer#readme"
 }
