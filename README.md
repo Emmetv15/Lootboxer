@@ -1,1 +1,2 @@
 # Lootboxer
+Discord bot
