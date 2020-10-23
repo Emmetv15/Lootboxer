@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # Bot credentials
-store.json
+config.json
