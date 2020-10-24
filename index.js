@@ -1,6 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
+const { prefix, token, ownerIDs } = require('./config.json');
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
@@ -28,6 +28,14 @@ client.on('message', message => {
 		|| client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
 	if (!command) return;
+
+	if (command.access) {
+		if (command.access === 'Developer') {
+			if (ownerIDs.indexOf(message.author.id) < 0) {
+				return message.reply('You have to be a developer to run that command')
+			}
+		}
+	}
 
 	if (command.guildOnly && message.channel.type === 'dm') {
 		return message.reply('Cant\'t do that in DM\'s!');
